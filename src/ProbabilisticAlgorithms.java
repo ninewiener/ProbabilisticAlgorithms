@@ -4,15 +4,21 @@ import java.util.Random;
 public class ProbabilisticAlgorithms {
   private Random rand = new Random();
   private double squareLength = 10;
+  private static final int totalPoints = 10000;
 
   public static void main(String[] args) {
     ProbabilisticAlgorithms pa = new ProbabilisticAlgorithms();
-    double[][] coords = pa.computePi(10);
+    double[][] coords = pa.computePi(totalPoints);
+    int counter = 0;
     for (double[] coord : coords) {
       System.out.print(Arrays.toString(coord));
-      if (pa.isInsideCircle(coord)) System.out.println(" inside");
-      else System.out.println(" outside");
+      if (pa.isInsideCircle(coord)) {
+        System.out.println(" inside");
+        counter++;
+      } else System.out.println(" outside");
     }
+    System.out.println(counter + " / " + totalPoints);
+    System.out.println(Math.pow((double) counter * 4 / totalPoints, 1));
   }
 
   private double[][] computePi(int numberOfPoints) {
