@@ -4,7 +4,7 @@ import java.util.Random;
 public class ProbabilisticAlgorithms {
   private Random rand = new Random();
   private double squareLength = 10;
-  private static final int totalPoints = 10000;
+  private static final int totalPoints = 100000;
 
   public static void main(String[] args) {
     ProbabilisticAlgorithms pa = new ProbabilisticAlgorithms();
@@ -17,6 +17,10 @@ public class ProbabilisticAlgorithms {
         counter++;
       } else System.out.println(" outside");
     }
+    approximatePi(counter);
+  }
+
+  private static void approximatePi(int counter) {
     System.out.println(counter + " / " + totalPoints);
     System.out.println(Math.pow((double) counter * 4 / totalPoints, 1));
   }
