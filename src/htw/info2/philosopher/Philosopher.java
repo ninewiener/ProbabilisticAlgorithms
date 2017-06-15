@@ -2,13 +2,16 @@ package htw.info2.philosopher;
 
 import java.util.Random;
 
-public class Philosopher extends Thread {
+public class Philosopher implements Runnable {
   boolean isBusy;
   private int id;
   private Random rand;
 
+  public Philosopher() {
+    System.out.println("test");
+  }
+
   public Philosopher(int id) {
-    // TODO Auto-generated constructor stub
     this.id = id;
     rand = new Random();
   }
@@ -21,9 +24,8 @@ public class Philosopher extends Thread {
           System.out.println(id);
         } else {
           try {
-            wait(10);
+            wait(3000);
           } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
           }
         }
