@@ -8,7 +8,7 @@ public class ProbabilisticAlgorithms {
 
   public static void main(String[] args) {
     ProbabilisticAlgorithms pa = new ProbabilisticAlgorithms();
-    double[][] coords = pa.computePi(totalPoints);
+    double[][] coords = pa.generateRandomPoints(totalPoints);
     int counter = 0;
     for (double[] coord : coords) {
       System.out.print(Arrays.toString(coord));
@@ -17,15 +17,15 @@ public class ProbabilisticAlgorithms {
         counter++;
       } else System.out.println(" outside");
     }
-    approximatePi(counter);
+    System.out.println(pa.approximatePi(counter));
   }
 
-  private static void approximatePi(int counter) {
+  private double approximatePi(int counter) {
     System.out.println(counter + " / " + totalPoints);
-    System.out.println(Math.pow((double) counter * 4 / totalPoints, 1));
+    return (double) counter * 4 / totalPoints;
   }
 
-  private double[][] computePi(int numberOfPoints) {
+  private double[][] generateRandomPoints(int numberOfPoints) {
     double[][] coords = new double[numberOfPoints][2];
     for (int i = 0; i < numberOfPoints; i++) {
       double x = rand.nextDouble() * squareLength;
