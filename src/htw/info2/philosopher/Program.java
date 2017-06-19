@@ -3,13 +3,25 @@ package htw.info2.philosopher;
 public class Program {
 
   private Philosopher ph1, ph2, ph3, ph4, ph5;
+  private Philosopher[] philosophers;
+  private Fork[] forks;
+  private Thread[] threads;
 
   public Program() {
-    ph1 = new Philosopher(1);
-    ph2 = new Philosopher(2);
-    ph3 = new Philosopher(3);
-    ph4 = new Philosopher(4);
-    ph5 = new Philosopher(5);
+    philosophers = new Philosopher[5];
+    /* for (int i = 0; i < philosophers.length; i++) {
+      philosophers[i] = new Philosopher(i);
+      System.out.println(philosophers[i]);
+    } */
+
+    forks = new Fork[5];
+    for (int i = 0; i < forks.length; i++) {
+      forks[i] = new Fork(i);
+    }
+
+    for (Fork fork : forks) {
+      System.out.println("Fork " + fork.getId());
+    }
   }
 
   public static void main(String[] args) {
@@ -18,15 +30,22 @@ public class Program {
   }
 
   private void run() {
-    Thread threadPh1 = new Thread(ph1);
-    threadPh1.start();
-    Thread threadPh2 = new Thread(ph2);
-    threadPh2.start();
-    Thread threadPh3 = new Thread(ph3);
-    threadPh3.start();
-    Thread threadPh4 = new Thread(ph4);
-    threadPh4.start();
-    Thread threadPh5 = new Thread(ph5);
-    threadPh5.start();
+    threads = new Thread[philosophers.length];
+    for (int i = 0; i < philosophers.length; i++) {
+      Fork leftFork = forks[i];
+      Fork rightFork = forks[(i + 1) % 5]; // 5 becomes 0
+      philosophers[i] = new Philosopher(i, leftFork, rightFork);
+      threads[i] = new Thread(philosophers[i]);
+      threads[i].start();
+    }
+  }
+
+  Philosopher getPhilosopher(int id) {
+    try {
+      return philosophers[id];
+    } catch (NullPointerException e) {
+      e.printStackTrace();
+    }
+    return null;
   }
 }
