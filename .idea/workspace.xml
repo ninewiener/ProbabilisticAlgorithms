@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af4a9b76-1e5d-49af-9829-a257bd39a13f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/htw/info2/philosopher/Philosopher.java" afterPath="$PROJECT_DIR$/src/htw/info2/philosopher/Philosopher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/htw/info2/philosopher/Program.java" afterPath="$PROJECT_DIR$/src/htw/info2/philosopher/Program.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,21 +31,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Philosopher.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Philosopher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/htw/info2/philosopher/Philosopher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="435">
+              <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Program.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Program.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/htw/info2/philosopher/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+            <state relative-caret-position="960">
+              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -100,9 +98,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ProbabilisticAlgorithms.java" />
-        <option value="$PROJECT_DIR$/src/htw/info2/philosopher/Program.java" />
         <option value="$PROJECT_DIR$/src/htw/info2/philosopher/Fork.java" />
         <option value="$PROJECT_DIR$/src/htw/info2/philosopher/Philosopher.java" />
+        <option value="$PROJECT_DIR$/src/htw/info2/philosopher/Program.java" />
       </list>
     </option>
   </component>
@@ -594,12 +592,12 @@
       <workItem from="1497450108883" duration="1592000" />
       <workItem from="1497535585753" duration="3016000" />
       <workItem from="1497686114089" duration="7000" />
-      <workItem from="1497891934132" duration="6272000" />
+      <workItem from="1497891934132" duration="8825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15861000" />
+    <option name="totallyTimeSpent" value="18414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="708" y="23" width="933" height="962" extended-state="0" />
@@ -762,18 +760,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/htw/info2/philosopher/Philosopher.java">
+    <entry file="file://$PROJECT_DIR$/src/htw/info2/philosopher/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="960">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/htw/info2/philosopher/Program.java">
+    <entry file="file://$PROJECT_DIR$/src/htw/info2/philosopher/Philosopher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="435">
+          <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
           <folding />
         </state>
       </provider>

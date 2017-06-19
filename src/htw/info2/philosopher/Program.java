@@ -1,11 +1,8 @@
 package htw.info2.philosopher;
 
 public class Program {
-
-  private Philosopher ph1, ph2, ph3, ph4, ph5;
   private Philosopher[] philosophers;
   private Fork[] forks;
-  private Thread[] threads;
 
   public Program() {
     philosophers = new Philosopher[5];
@@ -30,7 +27,7 @@ public class Program {
   }
 
   private void run() {
-    threads = new Thread[philosophers.length];
+    Thread[] threads = new Thread[philosophers.length];
     for (int i = 0; i < philosophers.length; i++) {
       Fork leftFork = forks[i];
       Fork rightFork = forks[(i + 1) % 5]; // 5 becomes 0
